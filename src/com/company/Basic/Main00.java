@@ -1,8 +1,10 @@
-package com.company;
+package com.company.Basic;
+
+import com.company.Basic.Bloc;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main00 {
 
     public static void main(String[] args) {
 	// write your code here

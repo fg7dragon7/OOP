@@ -1,4 +1,4 @@
-package com.company;
+package com.company.Basic;
 
 public class Bloc {
     public String scara;
@@ -27,15 +27,16 @@ public void setNumeBloc(String numeBloc){
       this.numeBloc = numeBloc;
 }
 
-public void setNumarEtaje(String numarEtaje){
-      this.numarEtaje = numarEtaje;
-}
-
-public String getScara{
-      return this.scara;
+    public int getNumarEtaje() {
+        return numarEtaje;
     }
-    public String getNumarEtaje{
-      return this.numarEtaje;
+
+    public String getNumeBloc() {
+        return numeBloc;
+    }
+
+    public void setNumarEtaje(int numarEtaje) {
+        this.numarEtaje = numarEtaje;
     }
 
     public void setPretPeEtaj(int pret){

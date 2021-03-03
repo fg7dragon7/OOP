@@ -68,7 +68,6 @@ public class Main {
         }
     }
     public static void afisareProduse(Produs[] produses){
-
         for (int i = 0; i < produses.length; i++){
             Produs produs = produses[i];
             if (produs != null){
@@ -77,6 +76,19 @@ public class Main {
                 String producatorul = produs.getProducator();
                 System.out.println(name + " pret: " + pret + " lei" + " producator: " + producatorul);
 
+
+                if (produs instanceof Fruct){
+                    Fruct fruct = (Fruct) produs;
+                    System.out.println("Fructul este: " + fruct.isBio());
+                }
+                if (produs instanceof Haine){
+                    Haine haine = (Haine) produs;
+                    System.out.println("Haina are marimea: " + haine.getMarime());
+                }
+                if (produs instanceof Dulciuri){
+                    Dulciuri dulciuri = (Dulciuri) produs;
+                    System.out.println("Dulciurile au gramajul: " + dulciuri.getGramaj());
+                }
             }
         }
     }

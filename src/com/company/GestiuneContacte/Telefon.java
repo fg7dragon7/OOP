@@ -9,7 +9,7 @@ public class Telefon {
         this.nume = nume;
     }
 
-    public void addContact(Contact contact){
+    public void addContact(Contact contact) {
         this.contacte[index] = contact;
         this.index++;
     }

@@ -31,7 +31,7 @@ public class Main {
             if (optiune == 1) {
                 afisareTelefoane(telefoaneInregistrate);
             }
-            if (optiune == 4){
+            if (optiune == 4) {
                 afisareTelefoane(telefoaneInregistrate);
                 System.out.println("Alegeti telefonul: (1-10)");
 
@@ -49,7 +49,7 @@ public class Main {
                 Telefon telefonAles = telefoaneInregistrate[indexulTelefonulAles - 1];
                 telefonAles.addContact(contact);
             }
-            if (optiune == 3){
+            if (optiune == 3) {
                 afisareTelefoane(telefoaneInregistrate);
                 System.out.println("Alegeti telefonul: (1-10)");
                 int indexulTelefonulAles = scanner.nextInt();
@@ -60,10 +60,11 @@ public class Main {
             }
         }
     }
-    public static void afisareContacte(Contact[] contacts){
-        for (int i = 0; i < contacts.length; i++){
+
+    public static void afisareContacte(Contact[] contacts) {
+        for (int i = 0; i < contacts.length; i++) {
             Contact contact = contacts[i];
-            if (contact != null){
+            if (contact != null) {
                 String nume = contact.getName();
                 String prenume = contact.getPrenume();
                 String telefon = contact.getNrTelefon();
